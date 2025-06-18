@@ -1,0 +1,13 @@
+#navmain{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 320px;
+}
+#logo{
+ width: 230px;
+ 
+}
+#l1{
+    margin-left: 200px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Banner</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'OPPOSans-Ver2-Regular', Helvetica, Arial, sans-serif;
+            width: 1000px; /* Fixed width */
+            overflow-x: hidden;
+        }
+        
+        #oc-wrapper {
+            box-sizing: border-box;
+            height: auto;
+            width: 1000px; /* Fixed width */
+            position: relative;
+            z-index: 1;
+            margin: auto;
+            overflow: hidden;
+            padding-bottom: 66px;
+            margin-top: 58px;
+        }
+
+        #oc-container {
+            width: 1000px; /* Fixed width */
+            position: relative;
+            padding-top: 80px;
+        }
+
+        .hero-banner-kv {
+            position: relative;
+            width: 1000px; /* Fixed width */
+            color: rgba(0,0,0,0.95);
+            min-height: 340px;
+        }
+
+        .content-container {
+            position: absolute;
+            width: 1000px; /* Fixed width */
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+
+        .top-layout {
+            width: 1000px; /* Fixed width */
+        }
+
+        .title {
+            font-size: 30px;
+            line-height: 38px;
+            letter-spacing: 0.5px;
+            font-family: 'OPPOSans-Ver2-Medium';
+        }
+
+        .desc {
+            font-size: 16px;
+            line-height: 24px;
+            opacity: 0.7;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="oc-wrapper">
+        <section id="oc-container">
+            <div class="hero-banner-kv">
+                <div class="content-container">
+                    <div class="top-layout">
+                        <div class="title">Hero Banner Title</div>
+                        <div class="desc">Hero Banner Description</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
