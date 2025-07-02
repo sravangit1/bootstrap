@@ -1,0 +1,110 @@
+body{
+    background-color: #f5f5f7;
+}
+.navbar{
+    
+    z-index: 2;
+    width: 100%;
+    top: 0;
+}
+ul{
+    margin-left: 500px;
+}
+.he{
+
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+.textcar{
+    width: 350px;
+    font-family: sans-serif;
+    font-size: 17px;
+   
+}
+.m{
+    margin-left: 100px;
+}
+.mm{
+    margin-top: 130px;
+}
+.cd{
+    background-image: url(https://developer.apple.com/wwdc25/images/today/today-day5_2x.jpg);
+    background-size: cover;
+    width: 650px;
+    height: 355px;
+    
+}
+.card-body{
+    padding-top: 60px;
+    padding-left: 40px;
+    
+    }
+h4{
+    font-weight: bold;
+}
+
+.textcard{
+   font-family: sans-serif;
+    font-size: 17px; 
+}
+h3{
+    font-weight: bolder;
+}
+a{
+    text-decoration: none;
+    
+}
+a:hover{
+    text-decoration:underline
+}
+.m1{
+    margin-left: 90px;
+    border-radius: 30px;
+    
+    background-size: cover;
+    background-position: center;
+}
+.t{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.p1{
+    position: relative;
+    left:190px ;
+    bottom: 70px;
+    font-size: x-large;
+    
+}
+.pb{
+    font-size: xx-large;
+}
+#hd1{
+    margin-left: 60px;
+    text-align: center;
+    font-weight:500;
+}
+.grd{
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.grd1{
+    height: 280px;
+    width: 280px;
+    margin-left: 20px;
+    
+}
+.dd{
+    margin-top: 100px;
+    height: 400px;
+    width: 500px;
+    /* margin-right: 20px; */
+}
+.dd1{
+    margin-top: 100px;
+    height: 400px;
+    width: 500px;
+    margin-left: 10px;
+}

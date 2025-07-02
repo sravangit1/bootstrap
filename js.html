@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // first question
+    function arithmatic(a,b){
+    console.log(a+b)
+    console.log(a-b)
+    console.log(a*b)
+    console.log(a/b)
+    console.log(a%b)
+    }
+    arithmatic(300,5000)
+    
+    // second question
+    op=3
+   function cal(num,nun){
+        switch(op){
+            case 1:
+                console.log(num+nun)
+                break;
+            case 2:
+                console.log(num-nun)
+                break;
+            case 3: 
+                console.log(num*nun)
+                break;
+            case 4: 
+            console.log(num/nun)
+            break;
+            case 5: 
+            console.log(num%nun)
+                
+            default: 
+                console.log("Invalid input")
+        }
+    }
+    cal(20,30)
+
+
+    // third question
+   
+   function eod(d){
+    if(d % 2 ==0 ){
+        console.log("is  even")
+    }
+    else{
+        console.log("is odd")
+    }
+}
+ eod(11)  
+ 
+ // fourth question
+
+ function sum(n){
+    console.log((n*(n+1))/2)
+ }
+ sum(20) 
+
+
+ // fifth question
+        
+        function lar(val1,val2,val3,val4){
+        if(val1 > val2 && val1 > val3 && val1 > val4){
+            console.log(val1)
+        }
+        else if(val2 > val3 && val2 > val4){
+            console.log(val2)
+        }
+        else if( val3 > val4){
+            console.log(val3)
+        }
+        else{
+            console.log(val4 )
+        }
+    }
+lar(10,2,3,4)
+
+
+// sixth question
+
+          function leap(year){
+            if((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)){
+                console.log("its is a leap year")
+            }
+            else{
+                console.log("it is not a leap year")
+            }
+          }
+          leap(2004)
+        
+
+
+    // seventh question
+
+          das = 7
+        function day(){
+            switch(das){
+                case 1 :
+                    console.log("monday")
+                    break;
+                 case 2 :
+                    console.log("tuesday")
+                    break;
+                 case 3 :
+                    console.log("wednesday")
+                    break;
+                 case 4 :
+                    console.log("thursday")
+                    break;
+                 case 5 :
+                    console.log("friday")
+                    break;
+                 case 6 :
+                    console.log("saturday")
+                    break;
+                 case 7 :
+                    console.log("sunday")
+                    break;
+                    default:
+                        console.log("invalid input")
+                 
+            }
+        }
+        day()
+
+
+        // 8th question
+
+          mon = 7
+        function month(){
+            switch(mon){
+                case 1 :
+                    console.log("janvary")
+                    break;
+                 case 2 :
+                    console.log("febrvary")
+                    break;
+                 case 3 :
+                    console.log("march")
+                    break;
+                 case 4 :
+                    console.log("april")
+                    break;
+                 case 5 :
+                    console.log("may")
+                    break;
+                 case 6 :
+                    console.log("june")
+                    break;
+                 case 7 :
+                    console.log("july")
+                    break;
+                    case 8 :
+                    console.log("august")
+                    break;
+                    case 9 :
+                    console.log("september")
+                    break;
+                    case 10 :
+                    console.log("october")
+                    break;
+                    case 11 :
+                    console.log("november")
+                    break;
+                    case 12 :
+                    console.log("december")
+                    break;
+                    default:
+                        console.log("invalid input")
+                 
+            }
+        }
+        month()
+
+
+
+
+// 9th question
+
+       function grade(mark){
+        if(mark >= 90){
+            console.log("A grade")
+        }
+        else if(mark >= 80 && mark <= 89){
+            console.log("B Grade")
+        }
+        else if(mark >= 70 && mark <= 79){
+            console.log("C Grade")
+        }
+         else if(mark >= 60 && mark <= 69){
+            console.log("D Grade")
+        }
+         else {
+            console.log("F Grade")
+        }
+       }
+ 
+// 10th question
+
+function temp(cel){
+console.log((cel * 9/5) + 32  +"Fahrenheit")
+}
+temp(20)
+
+
+// 11th question
+
+function simpleInterset(p,r,t){
+    console.log((p * r * t) / 100 + " is the simple interest")
+}
+simpleInterset(10000,5,12)
+
+// 12th question
+
+function volume(side , height , radius){
+    console.log(side * side * side + "volume of the qube")
+
+    console.log( 3.14 * radius * radius * height + "volume of the cylinder")
+
+    console.log( 4/3 * 3.14 * radius * radius * radius+ "volume of the sphere")
+}
+volume(10 , 20 , 4)
+
+// 13th question
+
+function shapes(radius , side , base , height ,lenght , width ){
+    switch (area){
+        case 1:
+    console.log(3.14 * radius * radius + " is tha area of the circle")
+    break;
+     case 2:
+    console.log( side * side + "  is tha area of the square")
+    break;
+     case 3:
+    console.log( length * width + " is tha area of the rectangle")
+    break;
+     case 4:
+    console.log((base * height)/2 + " is tha area of the triangle")
+    break;
+    }
+}
+area=2
+shapes(5, 10, 8, 15, 20, 18);
+
+// 14th question
+
+
+</script>
+</body>
+</html>

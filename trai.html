@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: white; height: 60px;" >
+  <div style="background-color: white;  border-bottom: 1px solid black;" class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="images/icon.png" style="width: 80px; height: 50px;" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active ms-5 fs-5" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active ms-5 fs-5" aria-current="page" href="#products">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active ms-5 fs-5" aria-current="page" href="#about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active ms-5 fs-5" aria-current="page" href="#contact">Contact Us</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img style="height: 700px;" src="img/elec.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <button type="button" class="btn btn-info" style="height: 80x; width: 150px;">Info</button>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img style="height: 700px;" src="img/figurine.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <button type="button" style="height: 80x; width: 150px;" class="btn btn-info">Shop Now</button>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img style="height: 700px;" src="img/shoe.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <button type="button" style="height: 80x; width: 150px;" class="btn btn-info">Shop Now</button>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div id="products" style="position: absolute; top: 915px;"><h2>Products</h2></div>
+<div class="card-group" style="margin-top: 200px;">
+  <div class="card">
+    <img style="height: 337px;" src="data:image/webp;base64,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" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Iphones</h5>
+      <p class="card-text">Apple’s iPhone ads are known for their emotional storytelling, sleek visuals, and focus on innovation. They often highlight how the iPhone enhances everyday life—whether through stunning photography, privacy features, or seamless integration with other Apple products. Campaigns like “Shot on iPhone” showcase real user content, while others use cinematic narratives or celebrity collaborations to emphasize creativity and connection.
+
+</p>
+      <button type="button" class="btn btn-m" style="background-color: blue; color: white;">Shop now</button>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://th.bing.com/th/id/OIP.quWmzOzvUUUROnx6kss9_wHaEv?w=312&h=200&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Televisions</h5>
+      <p class="card-text">A television ad, or TV commercial, is a short promotional video aired during breaks in TV programming to market a product, service, or idea. These ads typically last between 15 to 60 seconds and use a mix of visuals, sound, and storytelling to grab attention and leave a lasting impression. They're designed to reach a wide audience quickly and are often crafted to be emotionally engaging, memorable, and persuasive</p>
+      <button type="button" class="btn btn-m" style="background-color: blue; color: white;">Shop Now</button>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://www.adler.com.pl/dane/zdjecia/cr_6018/cr_6018_15.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Kitchen</h5>
+      <p class="card-text">Upgrade your kitchen with smart, efficient appliances designed for modern living. From powerful blenders to versatile air fryers, enjoy faster cooking and cleaner results. Make every meal easier, healthier, and more delicious.</p>
+      <button type="button" class="btn btn-m" style="background-color: rgb(229 43 82); color: white;">Shop Now</button>
+    </div>
+  </div>
+</div>
+<div class="card-group" style="margin-top: 50px;">
+  <div class="card">
+    <img style="height: 337px;" src="https://images-cdn.ispot.tv/ad/TAVG/default-large.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Toys</h5>
+      <p class="card-text">Discover the magic of play with our exclusive figurines and toys! From superheroes to fantasy creatures, spark imagination and adventure in every child’s world. Collect, create, and cherish—fun starts here!
+</p>
+      <button type="button" class="btn btn-m" style="background-color: rgb(229 43 82); color: white;">Shop Now</button>
+    </div>
+  </div>
+  <div class="card">
+    <img height="337px" src="https://sm.mashable.com/t/mashable_in/photo/default/20240913-114446-0000_9e7k.1248.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Phones</h5>
+      <p class="card-text">Experience the perfect blend of style and innovation with our sleek touchscreen flip phone. Compact, powerful, and ultra-modern—flip open to a vivid display, flip closed for elegance and protection. Flip smart, live smarter!
+</p>
+      <button type="button" class="btn btn-m" style="background-color: rgb(229 43 82); color: white;">Shop Now</button>
+    </div>
+  </div>
+  <div class="card">
+    <img height="337px" src="https://sm.mashable.com/mashable_in/news/a/asus-new-d/asus-new-dual-screen-laptop-is-totally-bonkers_adqq.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Laptop</h5>
+      <p class="card-text">Unleash performance and portability with our cutting-edge laptop. Sleek design meets powerful processing, vibrant display, and all-day battery life. Whether for work or play, it’s your ultimate on-the-go companion. Power up anywhere!
+</p>
+      <button type="button" class="btn btn-m" style="background-color: rgb(229 43 82); color: white;">Shop Now</button>
+    </div>
+  </div>
+</div>
+<div id="about" style="padding-top: 100px;">
+  <h2>About Us</h2>
+  <div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action" style="height: 180px; width: 600px;">
+    <div class="d-flex w-75 justify-content-between">
+      <h5 class="mb-1 text-black">How It Started:</h5>
+    </div>
+    <p class="mb-1 text-black">Our journey began with a simple idea: to create an all-in-one shopping app that brings quality products—like shoes, phones, and appliances—right to your fingertips, quickly and affordably..</p>
+  </a>
+  <a href="#" class="list-group-item list-group-item-action" style="height: 180px; width: 600px;">
+    <div class="d-flex w-75 justify-content-between">
+      <h5 class="mb-1 text-black">Where We're Located:</h5>
+    </div>
+    <p class="mb-1 text-black">Headquartered in Mumbai,India we serve customers nationwide with reliable delivery and customer support. Our strategic location helps us offer fast service and better access to top global brands.</p>
+
+  </a>
+  <a href="#" class="list-group-item list-group-item-action" style="height: 180px; width: 600px;">
+    <div class="d-flex w-75 justify-content-between">
+      <h5 class="mb-1 text-black">Why We’re Great:</h5>
+    </div>
+    <p class="mb-1 text-black">We combine variety, value, and convenience. From kids' toys to kitchen essentials and tech gadgets, our app offers a smooth shopping experience with competitive prices, secure payments, and quick delivery.</p>
+  </a>
+</div>
+</div>
+<div id="Contact" style="padding-top: 180px;">
+  <h2>Contact Us</h2>
+  
+</div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
