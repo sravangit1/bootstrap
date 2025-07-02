@@ -108,3 +108,58 @@ a:hover{
     width: 500px;
     margin-left: 10px;
 }
+.grrd{
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+     gap: 120px;
+    
+}
+.grrd1{
+    height: 330px;
+    width: 330px;
+    margin-left: 20px;
+   
+    
+}
+.q{
+    text-align: center;
+    margin-top: 50px;
+}
+footer{
+   text-align: start;
+   margin-left: 250px;
+   font-size: smaller;
+   color: grey;
+   margin-top: 200px;
+   margin-right: 250px;
+}
+.ap{
+    color: grey;
+}
+.ap:hover{
+    color: black;
+}
+.dev{
+    color: grey;
+    text-decoration: none;
+}
+.dev:hover{
+    color: black;
+    text-decoration: underline;
+}
+.list{
+    margin-left: 300px;
+    margin-top: -35px;
+}
+li{
+    display: inline;
+    padding-right: 20px;
+    
+}
+.drp{
+    color: blue;
+    border: 0px;
+    position: inherit;
+    margin-left: 220px;
+}
