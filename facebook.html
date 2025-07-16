@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/facebook.css">
+<body >
+    <div class="container-fluid d-flex justify-content-center ">
+        <div>
+            <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="" id="face"><br>
+            <h3 >Facebook helps you connect and share with friends and loved ones.</h3>
+        </div>
+        <div  class="d-flex  justify-content-center   formdiv">
+            <div class="formdiv2 shadow">
+            <form name="reg" oninput="handleClearForm()" onsubmit="return handleSubmit()" class="w-100 d-flex flex-column gap-3" >
+                <div class="d-flex flex-column gap-1">
+                    <input type="text" id="log" name="log" placeholder="Email or phone number" >
+                    <span class="error"></span>
+                </div>
+                <div class="d-flex flex-column gap-1">
+                    <input type="password" id="logpass" name="logpass" placeholder="password">
+                    <span class="error"></span>
+                </div>
+                <div>
+                    <button type="login " class="logbtn">login</button>
+                </div>
+                <div id="Forget">
+                    <a href="">Forget your password?</a>
+                </div>
+                <div>
+                    <hr>
+                </div>
+                
+            </form>
+            <div id="new">
+                   <a href="./createacc.html"> <button  class="newbtn">create new account</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script  src="./js/facebook.js"></script>
+</body>
+</html>

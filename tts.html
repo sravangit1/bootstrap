@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Q1
+        const parentfunc =() => {
+            let count =0;
+            const childfun = () => {
+
+                count = count +2
+                return count
+            }
+            return childfun
+
+        }
+        const funct = parentfunc()
+
+        console.log(funct())
+        console.log(funct())
+
+        //q2
+        const greet = () => {
+            const greet1 = (n) => {
+                let meet ="hello"
+                return meet+n
+            }
+            return greet1
+        }
+        const fgreet = greet()
+        
+        console.log(fgreet("john"))
+        console.log(fgreet("jane"))
+
+        //Q3
+
+
+        const multiplier =() => {
+            
+            const multiply= (multi) => {
+                return multi *5
+            }
+            return multiply
+        }
+        const multiplyBy5 = multiplier()
+        console.log(multiplyBy5(9))
+
+    // Question 5: Write a closure function that creates a name formatter
+    // Example:
+    // const formatter = createNameFormatter();
+    // formatter.setFormat("uppercase");
+    // formatter.format("john"); // Returns "JOHN"
+
+        const nameFormat=()=>{
+            
+        }
+
+        //q6
+
+        const calculator =()=>{
+            
+            const cal1 = (a,b) =>{
+                return a+b
+
+            }
+        
+            const cal2 = (a,b) =>{
+                return a-b
+
+            }
+            const cal3 = (a,b) =>{
+                return a*b
+
+            }
+            const cal4 = (a,b) =>{
+                return a/b
+
+            }
+            const cal5 = (a,b) =>{
+                return a%b
+
+            }
+            return{ cal1 , cal2 , cal3 , cal4 , cal5 }
+        }
+        const simpleCalculator =calculator()
+
+        console.log(simpleCalculator.cal1(10,20))
+        console.log(simpleCalculator.cal4(10,20))
+
+        
+    </script>
+</body>
+</html>

@@ -5,10 +5,11 @@
         error[i].innerHTML = "";
     }
  }
+ 
 
  function handleSubmit(){
 
-    const name = document.reg.name.value.trim()
+    const name = document.reg.name.value.trim() 
 
     const username = document.reg.username.value.trim()
 

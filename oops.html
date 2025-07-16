@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Q1
+        // Create a base class Animal with method make_sound. Derived classes like Dog, Cat, Cow override make_sound differently.
+      
+
+           class Animal {
+            make_sound() {
+                return "animal sounds"
+            }
+        }
+        class Dog extends Animal{
+            make_sound(){
+                return"bark"
+            }
+        }
+        class Cat extends Animal{
+            make_sound(){
+                return"meoww"
+            }
+        }
+        class Cow extends Animal{
+            make_sound(){
+                return"moo"
+            }
+        }
+const anim = new Animal()
+const dog = new Dog()
+const cat = new Cat()
+const cow = new Cow()
+console.log(dog.make_sound())
+console.log(cat.make_sound())
+console.log(cow.make_sound())
+
+
+ 
+
+    //Q2
+    // Create a Calculator class that supports the following operations using methods:
+
+    // Addition
+    // Subtraction
+    // Multiplication
+    // Division
+    // Percentage
+
+        class Calculator{
+            sum (a,b){
+                return a+b
+            }
+            sub (a,b){
+                return a-b
+            }
+            mul (a,b){
+                return a*b
+            }
+            div (a,b){
+                return a/b
+            }
+            mod (a,b){
+                return (a/b)*100
+            }
+        }
+        const clac = new Calculator()
+        const res = clac.mod(12,12)
+        console.log(res)
+
+    //Q3
+    // Create a class BankAccount with:
+
+    // Properties: account_holder, balance
+    // Methods: deposit, withdraw, check_balance
+    // class BankAccount{
+    //  
+    class BankAccount{
+        account_holder ="sravan"
+        balance = 0
+
+        deposit(amount){
+            return balance + amount +"deposited"
+
+        }
+        
+        withdraw(withdrawAmount){
+            if(withdrawAmount <= balance){
+                return "amount" +withdrawAmount+"withdrawed" 
+            }
+            else{
+                return" Not enough balance"
+            }
+        }
+        check_balance(){
+            return "remaining balance is" + (balance+amount)-withdrawAmount;
+        }
+
+    }
+    const account = new BankAccount()
+    const res1 = account.deposit(10000)
+    const res2 = account.withdraw(1000)
+    const res3 = account.check_balance()
+    </script>
+</body>
+</html>
